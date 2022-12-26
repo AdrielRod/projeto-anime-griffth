@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/*
+ família da fonte: 'Sriracha', cursiva;
+ font-family: 'Unbounded', cursiva;
+*/
+:root{
+    --cor01: #8B7AAE;
+    --cor02: #655091;
+    --cor03: #452F74;
+    --cor04: #2B1657;
+    --cor05: #16063A;
+    --cor06: transparent;
+    --fonte-animada: 'Unbounded', cursiva;
+}
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & family= Unbounded:wght@200;300;400;500;600;700;800;900 & display=swap' );
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+:target{
+    scroll-margin-top: 10em;
+}
+body{
+    background-image: url(../imagens/back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+header, footer{
+    background-image: linear-gradient(to right, var(--cor05), var(--cor04), var(--cor03), var(--cor02),var(--cor01) );
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315);
+    font-family: var(--fonte-animada);
+    margin: 5px;
+    padding: 30px;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.384);
+}
+
+#sumario{
+    margin: 5px;
+    border-top: 1px solid #655091;
+    border-bottom: 1px solid #655091;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.384);
+}
+#card{
+    background-image: url(../imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 95vw;
+    height: 450px;
+    border-radius: 3px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.384);
+    
+}
+#content{ 
+    color: white;
+    text-align: center;
+    background-color: #2b16579f;
+    border-radius: 7px;
+    width: 95vw;
+    height: 450px;
+}
+#centralizar{
+    padding-top: 190px;
+}
+details:hover{
+    color: var(--cor05);
+    transition: 0.5s;
+}
+details, a{
+    color: white;
+    text-shadow: 5px 7px 7px rgba(0, 0, 0, 0.411); 
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.float{
+    padding: 4px;
+    scroll-behavior: smooth;
+    scroll-margin-top: 50px;
+}
+details > div > p:hover{
+    background-color: #655091;
+    padding-right: 10px;  
+    transition: 0.5s ease-in-out;
+    text-decoration:underline;
+}
+details > div > p > a{
+    transition: 1s;
+}
+#aviso{
+    color: red;
+    text-shadow: 5px 5px 5px #16063A;
+}
+#card2{
+    background-color: var(--cor04);
+    padding: 3px;
+    border-radius: 6px;
+    text-align: center;
+}
+#fotos{
+    margin-top: 35px;
+}
+#onepiece{
+    background-image: url(../imagens/one-piece.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-top: 30px;
+    margin: auto;
+    width: 400px;
+    height: 270px;
+    border-radius: 7px;
+    
+}
+#onepiece:hover, #jujutsu:hover, #boku:hover, #beserk:hover{
+    width: 410px;
+    transition: 0.3s ease-in-out;
+}
+#jujutsu{
+    background-image: url(../imagens/jujutsu.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin: auto;
+    width: 400px;
+    height: 270px;
+    border-radius: 7px;
+}
+#boku{
+    background-image: url(../imagens/boku2.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin: auto;
+    width: 400px;
+    height: 270px;
+    border-radius: 7px;
+}
+#beserk{
+    background-image: url(../imagens/beserk.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin: auto;
+    width: 400px;
+    height: 270px;
+    border-radius: 7px;
+}
+
+iframe{
+    width: 500px;
+    height: 500px;
+}
+
+@media screen and (min-width: 768px){
+    #onepiece{
+        margin: auto;
+        width: 580px;
+        height: 450px;
+        border-radius: 7px;
+        
+    }
+    #boku{
+        margin: auto;
+        width: 580px;
+        height: 450px;
+        border-radius: 7px;
+        
+    }
+    #jujutsu{
+        margin: auto;
+        width: 580px;
+        height: 450px;
+        border-radius: 7px;
+        
+    }
+    #beserk{
+        width: 580px;
+        height: 450px;
+        border-radius: 7px;
+        
+    }
+    #onepiece:hover, #jujutsu:hover, #boku:hover, #beserk:hover{
+        width: 590px;
+        transition: 0.3s ease-in-out;
+    }
+}
